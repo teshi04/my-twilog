@@ -33,7 +33,6 @@
         <td><%= tweet.retweeted_status_timestamp %></td>
         <td><%= tweet.expanded_urls %></td>
         <td><%= link_to 'Show', tweet %></td>
-        <td><%= link_to 'Edit', edit_tweet_path(tweet) %></td>
         <td><%= link_to 'Destroy', tweet, method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>
     <% end %>
@@ -42,5 +41,4 @@
 
 <br>
 
-<%= link_to 'New Tweet', new_tweet_path %>
 <%= paginate(@tweets) %>
