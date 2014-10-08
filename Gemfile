@@ -30,6 +30,8 @@ gem 'jbuilder', '~> 1.2'
 # Pager
 gem 'kaminari'
 
+gem 'tweetstream'
+gem 'twitter'
 group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.
   gem 'sdoc', require: false
