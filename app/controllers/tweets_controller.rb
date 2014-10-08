@@ -4,7 +4,7 @@ class TweetsController < ApplicationController
   # GET /tweets
   # GET /tweets.json
   def index
-    @tweets = Tweet.page(params[:page]).per(100).order(:id)
+    @tweets = Tweet.page(params[:page]).per(100).order('id DESC')
   end
 
   # GET /tweets/1
