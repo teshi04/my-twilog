@@ -32,7 +32,6 @@
         <td><%= tweet.retweeted_status_user_id %></td>
         <td><%= tweet.retweeted_status_timestamp %></td>
         <td><%= tweet.expanded_urls %></td>
-        <td><%= link_to 'Show', tweet %></td>
         <td><%= link_to 'Destroy', tweet, method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>
     <% end %>
